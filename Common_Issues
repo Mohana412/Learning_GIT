@@ -1,0 +1,29 @@
+# learning_git
+Common Issues & Fixes
+
+Issue 1: Wrong Remote URL (# in URL)
+Error:
+fatal: https://github.com/Mohana412/Learning_GIT#/info/refs not valid
+Fix:
+git remote remove origin
+git remote add origin https://github.com/Mohana412/Learning_GIT.git
+
+Issue 2: Push Rejected (fetch first)
+Error:
+! [rejected] main -> main (fetch first)
+Fix: GitHub has changes your local doesn't have. Pull first:
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+
+Issue 3: master vs main Branch Mismatch
+Error: Local branch is 'master' but GitHub uses 'main'
+Fix:
+git branch -m master main
+
+Issue 4: Git Not Installed on AWS EC2
+Error:
+bash: git: command not found
+Fix (Amazon Linux 2023 uses dnf):
+sudo dnf install git -y
+git --version
+git clone https://github.com/Mohana412/Learning_GIT.git
