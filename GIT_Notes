@@ -1,0 +1,24 @@
+# learning_git
+Step 1 — Create a New Repository on GitHub
+Step 2 — Setup Git Locally
+Initialize & First Commit
+Run these commands in your project folder:
+echo "# learning_git" >> App.py
+code .                          # Opens VS Code
+git init                        # Initialize git (.git folder created)
+git add .                       # Stage all files
+git status                      # Check what's staged
+git commit -m "Initial commit"  # Save changes
+
+
+Important: Make sure your URL ends with .git — never copy a URL with # at the end!
+
+Step 3 — Branching
+Branches let you work on features without affecting the main code.
+
+git branch                      # See all branches
+git branch Priya                # Create new branch called Priya
+git checkout Priya              # Switch to Priya branch
+
+
+Once you push a branch, it will appear on GitHub. You can then create a Pull Request to merge it into main
